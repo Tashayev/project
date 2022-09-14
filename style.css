@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-size: cover;
+    background: #873049;
+}
+.inputBox{
+    position: relative;
+    width: 250px;
+
+}
+.inputBox input{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #bbbab6;
+    background: #873049;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #bbbab6;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: aquamarine;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #873049;
+    border-left: 1px solid aquamarine;
+    border-right: 1px solid aquamarine;
+    letter-spacing: 0.2em;
+
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid aquamarine;
+}
+.inputBox button{
+    padding: 10px;
+    background: darkgray;
+    transition: 0.5s;
+    color: white;
+}
+.inputBox input:valid~button,
+.inputBox input:focus~button{
+    border: 1px solid white;
+    background: rgba(234,81,222,0.2);
+    color: rgba(94,157,234);
+}
+
