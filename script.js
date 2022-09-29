@@ -14,7 +14,6 @@ localStorage.setItem('inp', nameSet);
 // Получаем ссылку на текстовое поле,
 // изменение которого будем отслеживать.
 let field = document.getElementById("inp");
-
 // Проверяем наличие значения 'autosave'
 // (это может произойти только если страница будет случайно обновлена)
 if (localStorage.getItem("autosave")) {

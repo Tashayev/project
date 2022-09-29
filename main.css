@@ -1,3 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    background-size: cover;
+
+}
+
+.quiz{
+    margin: 50px;
+    color: rgba(64,190,244,0.82);
+    background: rgba(5,3,31,0.33);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.window{
+    display: inherit;
+}
+.check{
+    display: inherit;
+}
+.inp {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 200px;
+    background: rgba(5,3,31,0.33);
+    color: rgba(64,190,244,0.82);
+
+
+}
 #degree{
-    width: 30px;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid rgba(255,255,255,0.21);
+    transition: 0.5s;
+    outline: none;
+    text-align: center;
+    color: rgba(64,190,244,0.82);
+}
+#degree:hover{
+    width: 50px;
+    background-color: rgba(5,3,31,0.5);
+}
+#degree:focus,
+#degree:valid{
+    border: 2px solid rgba(255,255,255,0.21);
+}
+
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(5,3,31,0.20);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f560";
+    font-size: 25px;
+    color: white;
+    display: none;
+
+}
+input[type="checkbox"]:hover{
+    background-color: rgba(5,3,31,0.41);
+}
+input[type="checkbox"]:checked{
+    background-color: rgba(23,26,249,0.45);
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+#button{
+
+    height: 30px;
+    width: 80px;
+    background-color: rgba(33,190,245,0.7);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: rgba(10,10,10,0.7);
+
 }

@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     gap: 30px;
     background-size: cover;
-    background: #873049;
+    background-image: url("img/back.jpg");
 }
 .inputBox{
     position: relative;
@@ -24,7 +24,7 @@ body{
     width: 150px;
     padding: 10px;
     border: 1px solid #bbbab6;
-    background: #873049;
+    background: rgba(106,225,239,0.5);
     border-radius: 5px;
     outline: none;
     color: #fff;
@@ -43,13 +43,13 @@ body{
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
-    color: aquamarine;
-    transform: translateX(10px) translateY(-7px);
+    color: rgba(37, 27, 245, 0.7);
+    transform: translateX(10px) translateY(-10px);
     font-size: 0.65em;
     padding: 0 10px;
-    background: #873049;
-    border-left: 1px solid aquamarine;
-    border-right: 1px solid aquamarine;
+    background: rgba(33,190,245,0.3);
+    border-left: 1px solid rgba(37, 27, 245, 0.7);
+    border-right: 1px solid rgba(37, 27, 245, 0.7);
     letter-spacing: 0.2em;
 
 }
@@ -59,7 +59,7 @@ body{
 }
 .inputBox button{
     padding: 10px;
-    background: darkgray;
+    background: rgba(106,225,239,0.3);
     transition: 0.5s;
     color: white;
 }

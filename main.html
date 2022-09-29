@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1 id="che"></h1>
     <form>
         <div class="quiz">
-            <a>Введите температуру воздуха</a>
-            <input id="degree">
-            <label for="degree">°C</label><br>
-            <div class="precipitation">
-                <input type="checkbox" class="wind" id="wind"
-                       name="contact" value="yes">
-                <label for="wind">Есть ли ветер?</label>
-                <input type="checkbox" id="snow">
-                <label for="snow">Идёт ли снег?</label>
-                <input type="checkbox" id="rain">
-                <label for="rain">Идёт ли дождь?</label>
+            <div class="window">
+                <a class="inp">Введите температуру воздуха</a>
+                <label for="degree" class="inp">
+                <input id="degree" class="inp">
+                °C</label>
+            </div>
+            <div class="check">
+                <label for="wind" class="inp">
+                    <input class="inpCheck"  type="checkbox" id="wind" name="wind" value="yes">Есть ли ветер?
+                </label>
+                <label for="snow" class="inp">
+                    <input class="inpCheck" type="checkbox" id="snow" name="snow" value="yes">Идёт ли снег?
+                </label>
+                <label for="rain" class="inp">
+                    <input class="inpCheck" type="checkbox" id="rain" name="rain" value="yes">Идёт ли дождь?
+                </label>
             </div>
         </div>
-        <button type="submit" id="button">Ввести</button>
     </form>
+    <div class="result">
+        <button id="button" type="button" onclick="button()">Ввести</button><br>
+    </div>
+    <div class="info">
+        <h3 id="result"></h3>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
