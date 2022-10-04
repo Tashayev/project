@@ -68,7 +68,7 @@ function background(){
     const getMonths = months.getMonth();
     if(getMonths <= 0 || getMonths === 11){
         //winter
-        document.body.style.backgroundImage = "url('img/winter.jpeg')";
+        document.body.style.backgroundImage = "url('winter.jpeg')";
     }
     else if(getMonths >= 2 && getMonths <=4 ){
         //spring
@@ -80,7 +80,7 @@ function background(){
     }
     else{
         // fall
-        document.body.style.backgroundImage = "url('img/autumn.jpg')";
+        document.body.style.backgroundImage = "url('autumn.jpg')";
     }
 }
 background();
