@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherCheck</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="greeting">
+        <h3 id="message" style="margin-right: 10px"></h3>
+        <h3>Приветствую друг! Как мне тебя называть?</h3>
+    </div>
+    <div class="inputBox">
+        <label>
+            <input type="text" autocomplete="off" required id="inp">
+            <span class="content-name">Имя</span>
+            <button type="submit" onclick="document.location = 'main.html'" class="button">Отправить</button>
+        </label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
