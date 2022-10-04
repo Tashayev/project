@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     gap: 30px;
     background-size: cover;
-    background-image: url("img/back.jpg");
+    background-image: url("back.jpg");
 }
 .inputBox{
     display: flex;
